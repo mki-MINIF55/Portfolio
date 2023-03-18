@@ -12,7 +12,7 @@
         </head>
             <body>
         <h1>PORTFOLIO</h1>
-        <p class = "lead">ｴｽﾜｲ ITｶﾚｯｼﾞ 卒業制作です。</p> <!--lead(Bootstrapの強調表示)を指定-->
+        <p class = "lead"></p> <!--lead(Bootstrapの強調表示)を指定-->
         <p>どこで生まれたかとんと見当がつかぬ。 何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
         <a class = "btn btn-primary href = "#" >OK</a> <!-- ﾎﾞﾀﾝ表示-->
 
