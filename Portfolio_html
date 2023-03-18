@@ -1,41 +1,62 @@
-<!-- Bootstrapを使う-->
-<!DOCTYPE html> <!-- ﾄﾞｷｭﾒﾝﾄﾀｲﾌﾟを指定 -->
-<html lang ="ja"> <!-- 日本語を指定 ja--> 
-    <head>
-        <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrapのグリッドシステム -->
+<!DOCTYPE html>
+<html lang="ja">
 
-            <title>Bootstrap</title> <!--タイトルを指定-->
-            <!-- Bootstrap -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        </head>
-            <body>
-        <h1>PORTFOLIO</h1>
-        <p class = "lead"></p> <!--lead(Bootstrapの強調表示)を指定-->
-        <p>どこで生まれたかとんと見当がつかぬ。 何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
-        <a class = "btn btn-primary href = "#" >OK</a> <!-- ﾎﾞﾀﾝ表示-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script scr = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style>
-        body { /* ｾﾚｸﾀ*/
-            padding : 30px; /* paddingﾌﾟﾛﾊﾟﾃｨ bodyの余白を指定--> */
-            background-color: #D3D3D3; /* background-colorﾌﾟﾛﾊﾟﾃｨ bodyの背景色を指定 */
-            color:#ffffff; /* colorﾌﾟﾛﾊﾟﾃｨ bodyの文字色を指定 */
-            
-            }
-            h1 {
-                color:red; /* colorﾌﾟﾛﾊﾟﾃｨ bodyの文字色を指定 */
-        }
+	<title>Project Nyaan</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-        p {
-            font-weight: bold; /* font-weightﾌﾟﾛﾊﾟﾃｨ bodyの太字を指定 */
-            font-size:120%; /* pxで設定は絶対の大きさ %は相対指定の単位 ﾃﾞﾊﾞｲｽの見え方によって違うのでとりあえず相対指定がお勧めらしい */
-            font-family: 'Meiryo', 'ﾒｲﾘｵ', sans-serif; /* font-familyﾌﾟﾛﾊﾟﾃｨ bodyのフォントを指定 */
-        }
+	<style>
+		body {
+			padding-top: 50px;
+			background-color: lightgray;
+		}
 
-    </style>
-    </body>
-  
+		.starter-template {
+			padding: 40px 15px;
+			background-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="starter-template">
+            <div class = "row">
+                <div class = "col-sm-12"> <!-- col-sm-12ﾌﾟﾛﾊﾟﾃｨ 列ﾌﾟﾛﾊﾟﾃｨ 12ｸﾞﾘｯﾄﾞ -->
+                    <div class = "jumbotoron">
+                        <h1>吾輩は猫である。</h1>
+                        <p class="lead">名前はまだない。</p>
+                        <a class="btn btn-primary" href="#">OK</a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-sm-4"> <!-- col-sm-4ﾌﾟﾛﾊﾟﾃｨ 列ﾌﾟﾛﾊﾟﾃｨ 4ｸﾞﾘｯﾄﾞ 12の3当分-->
+			        <h2>どこで生れたか</h2>
+			        <p>とんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。</p>
+                </div>
+                <div class = "col-sm-4">
+                    <h2>この書生というのは</h2>
+                    <p>時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。書生の顔を見たのがいわゆる人間というものの見始であろう。</p>
+                </div>
+                <div class = "col-sm-4">
+                    <h2>掌の上で少し落ちついて</h2>
+                    <p>書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。</p>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- /.container -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
 </html>
