@@ -1,79 +1,161 @@
-<!-- Bootstrapのグリッドシステム -->
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html><!-- ﾄﾞｷｭﾒﾝﾄﾀｲﾌﾟを指定 -->
+<html lang="ja"><!-- 日本語を指定 ja--> 
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>index.html</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>プロフィールページ</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: lightgray;
+            font-family:'Meiryo', 'ﾒｲﾘｵ', sans-serif;
+        }
 
-	<style>
-		body {
-			padding-top: 50px;
-			background-color: lightgray;
-			font-family: 'Meiryo', 'ﾒｲﾘｵ', sans-serif;
-		}
-
-		.starter-template {
-			padding: 40px 15px;
-			background-color: white;
-		}
-	</style>
+        .starter-template {
+            padding: 40px 40px;
+            background-color: white;
+        }
+        .color-talk {
+            color:lightseagreen;
+        }
+        .color-wrench {
+            color:steelblue;
+        }
+        .color-heart {
+            color:plum;
+        }
+        .icon-size {
+            font-size: 200%;
+        }
+        .jumbotron {
+            background-image: url("background_generator_Blue .png"); /*背景画像*/
+            color :white;
+        }
+        hr {
+            padding:40px,40px;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="container">
-		<div class="starter-template">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">My Portfolio</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Portfolio</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class = "jumbotron">
+        <div class = "container">
             <div class = "row">
-                <div class = "col-sm-12"> <!-- col-sm-12ﾌﾟﾛﾊﾟﾃｨ 列ﾌﾟﾛﾊﾟﾃｨ 12ｸﾞﾘｯﾄﾞ -->
-                    <div class = "jumbotoron">
-                        <h1>Portfolio</h1>
-                        <p class="lead">エスワイ　ITカレッジ Java養成科 ~ 2022.12月修了 ~</p>
-                        <a class="btn btn-primary" href="https://github.com/mki-MINIF55?tab=repositories" target="_blank">GitHub Repositories</a>
-                    </div> 
+                <div class = "col-sm-6">
+                    <h1>Porfolio Page</h1>
+                   <p class="lead">ポートフォリオ公開中!</p>
+
+                </div>
+                <div class = "col-sm-6">
+                    <img src="DSC_4245.JPG" class = "img-responsive">
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="container">
+        <div class="starter-template">
+                <div class = "row text-center">
+                    <h2>見かけによらず  鬼努力派</h2> <!-- ｱﾋﾟｰﾙﾎﾟｲﾝﾄ-->
+                <div class = "col-sm-4">
+                    <h3 class = "color-talk"><span class = "glyphicon glyphicon-bullhorn  icon-size"></span><br>SPEAK</h3>
+                    <p>コミュニケーション能力は中程度 <br>日本語と英語に加えて、<br>韓国語なら読める。</p>
+                </div>
+                <div class = "col-sm-4">
+                    <h3 class = "color-wrench"><span class = "glyphicon glyphicon-briefcase icon-size"></span><br>MAKE</h3>
+                    <p>エスワイITアカデミーで鍛えられた開発能力で、<br>主にJavaを用いて<br>多数の貢献をしていきたい。</p>
+                </div>
+                <div class = "col-sm-4">
+                    <h3 class = "color-heart"><span class = "glyphicon glyphicon-book icon-size"></span><br>STUDY</h3>
+                    <p>Java 基礎構文 条件分岐から、<br>正規表現、List、例外処理を学ぶ<br>現在はwebでpaizaラーニング</p>
+                </div>
+            </div>
+            <h2 id="works">Works  
+            <a class="btn btn-primary" href="https://github.com/mki-MINIF55?tab=repositories" target="_blank">GitHub Repositories</a>
+            </h2>
             <div class = "row">
-                <div class = "col-sm-4"> <!-- col-sm-4ﾌﾟﾛﾊﾟﾃｨ 列ﾌﾟﾛﾊﾟﾃｨ 4ｸﾞﾘｯﾄﾞ 12の3等分-->
+                <div class = "col-sm-3"> <!-- col-sm-4ﾌﾟﾛﾊﾟﾃｨ 列ﾌﾟﾛﾊﾟﾃｨ 4ｸﾞﾘｯﾄﾞ 12の3等分-->
 			
 				<a href="https://github.com/mki-MINIF55/Java_Basic_Production_Byschool" ><h2>卒業制作 Gaku_key for Java & Kotlin</h2></a>
 				<script src="https://kit.fontawesome.com/f271f7df23.js" crossorigin="anonymous"></script>
 					<i class="fa-brands fa-java fa-2x"></i>
 					<i class="fa-brands fa-android fa-lg"></i>
 						<p>趣味の楽器弾奏にあって、etudeの調の情報を調べるのが面倒でした。</p>
-						<p>調の記号で(#や♭)で検索したい思いで作成に至りました。 先生の助けもあり大きな学びへ繋がりました。 エスワイ ITカレッジと先生に感謝です。</p>
-						<p>また、卒業制作で時間が余ったとき…スマホへ実装し携帯性を持たせたいと計画、実行しました。</p>
-						<p>開発環境は、卒業制作にあってコーディンク゛規約にはありませんでしたが、eclipse等の統合環境開発ツールは用いないでほしいとのことでしたのでVS Codeを使用。 
-							スマホへの実装は卒業制作外の計画でしたので統合環境開発ツールAndroid Studioを用いproject作成からスタートしました。</p>
+						<p>調の記号で(#や♭)で検索したい思いで作成に至りました。 先生の助けもあり大きな学びへ繋がりました。 ｴｽﾜｲ ITカレッジと先生に感謝です。</p>
+						<p>また、卒業制作で時間が余ったとき…スマホへ実装し携帯性を持たせたいと計画、実装に成功しました。</p>
+						<p>開発環境は、卒業制作にあってコーディング規約にはありませんでしたが、eclipse等の総合環境開発ﾂｰﾙは用いないでほしいとのことでしたのでVS Codeを使用。 
+							ｽﾏﾎへの実装は卒業制作外の計画でしたので総合環境開発ﾂｰﾙAndroid Studioを用いproject作成からｽﾀｰﾄしました。</p>
 						<P>学校関係ではありませんが、エンジニア(ベテラン)の方から「現場ではBRは使用はあまりしない」と伺ったことがあり…教科書内で例外処理含め項目がありましたので自然のごとく使用をしています。</p>
 				</div>
-                <div class = "col-sm-2">
+                <div class = "col-sm-3">
                     <a href="https://github.com/mki-MINIF55/Gakukey_2022"><h2>Gaku_Key for Kotlin</h2></a>
 					<i class="fa-brands fa-android fa-lg"></i>
-                    <p>卒業制作の拡張でスマホへ実装したハードコーディンク゛でのprojectフォルタ゛です。</p>
+                    <p>卒業制作の拡張でスマホへ実装したハードコーディンク゛でのprojectﾌｫﾙﾀﾞです。</p>
                 </div>
-                <div class = "col-sm-2">
+                <div class = "col-sm-3">
                     <a href="https://github.com/mki-MINIF55/Java_M"><h2>Pason & Vehicle for Java</h2></a>
 					<i class="fa-brands fa-java fa-2x"></i>
                     <p>よくある問題の乗り物とオーナーにあって、オブジェクト指向とハードコーディンク゛をしないようにしました。 また、constaクラスはstaticを用い固定の文字列で設定。 メモリを少なくするためにnewしない目的で設定しました。</p>
                 </div>
-				<div class = "col-sm-2"> 
+				<div class = "col-sm-3"> 
                     <a href="https://github.com/mki-MINIF55/Java_q"><h2>Test & Answer for Java</h2></a>
 					<i class="fa-brands fa-java fa-2x"></i>
-                    <p>プログラミンク゛を習得するうえで受験用に答え合わせと答えの説明が出るようにしたいと考え作成をしました。</p>
+                    <p>ﾌﾟﾛｸﾞﾗﾐﾝｸﾞを習得するうえで受験用に答え合わせと答えの説明が出るようにしたいと考え作成をしました。</p>
                 </div>
             </div>
         </div>
 	</div>
-	<!-- /.container -->
+            <hr>
+            <h2 id="skills">Skills</h2>
+            <div class = "row">
+                <div class = "col-sm-4">
+                    <p>現在保持している資格と今後の受験予定です。</p>
+                    <p>資格</p>
+                    <p>日商簿記検定2級 <br>実用英語技能検定3級<br>第一種運転免許 優良</p>
+                </div>
+                <div class = "col-sm-4">
+                    <p>受験予定</p>
+                    <p>Java Bronze <br>Java  Silver<br>サーティファイJavaプログラミング能力認定試験<br>情報処理技術者試験<br>ITパスポート</p>
+                </div>
+                <div class = "col-sm-4">
+                    <p>PCスキル</p>
+                    <p>OS:  Windows11</p>
+                    <p>表計算ソフトExcel: 表計算、グラフ作成、関数  vlookup if等、データベース活用等 ショートカット多用します。<br>文書作成ソフト:Word 文書作成、図表挿入等</p>
+                </div>
+            </div>
+            
+            <div class="row starter-template">
+            <a class="btn btn-primary" href="#">Topに戻る</a>
+        </div>
+    <!-- /.container -->
 
-	<script src="https://mki-MINIF55/index_html"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
